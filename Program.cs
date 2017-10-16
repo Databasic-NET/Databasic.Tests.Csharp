@@ -7,6 +7,7 @@ using System.Linq;
 class Program {
 
 	static void Main () {
+		
 		Databasic.Events.Error += (System.Exception ex, Databasic.SqlErrorsCollection sqlErrors) => {
 			Desharp.Debug.Dump(ex);
 			Desharp.Debug.Dump(sqlErrors);
